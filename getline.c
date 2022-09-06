@@ -16,7 +16,9 @@ int main(int ac, char **av)
 	}
 	printf("$ ");
 	characters = getline(&buffer, &bufferSize, stdin);
-	printf("%s", buffer);
+	printf("%s\n", buffer);
+	printf("bufferSize: %lu\n", bufferSize);
+
 
 	return (0);
 }
